@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    signingConfigs {
+
+        debug {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+//        release {
+//            keyAlias 'alias'
+//            keyPassword '123456'
+//            storeFile file('./keystore/isora.jks')
+//            storePassword '123456'
+//        }
+
+    }
+    defaultConfig {
+        applicationId "com.isorasoft.phusan"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 15
+        versionName "2.3"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    String strBve = "Bệnh Viện E"
+    flavorDimensions "default"
+    productFlavors {
+        dev {
+            resValue "string", "bve_name", strBve
+            resValue "string", "service_host", "http://api.test.benhviene.com:38192/"
+            resValue "string", "topic_name", "news_test"
+            dimension "default"
+        }
+//        demo {
+//            resValue "string", "bve_name", strBve
+//            resValue "string", "service_host", "http://apidemo.benhviene.com/"
+//            resValue "string", "topic_name", "news_demo"
+//            dimension "default"
+//        }
+//        produce {
+//            resValue "string", "bve_name", strBve
+//            resValue "string", "service_host", "https://service.benhviene.com/"
+//            resValue "string", "topic_name", "news_produce"
+//            dimension "default"
+//        }
+    }
+
+    buildTypes {
+//        release {
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.release
+//        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+}
+repositories {
+    jcenter()
+    google()
+    maven { url "https://jitpack.io" }
+    maven { url "https://raw.githubusercontent.com/smilefam/SendBird-SDK-Android/master/" }
+}
+ext {
+    supportLibVersion = '26.1.0'
+    googleServiceVersion = '11.4.0'
+}
+
+dependencies {
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.soundcloud.android:android-crop:1.0.1@aar'
+    implementation 'de.hdodenhof:circleimageview:2.0.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.github.jd-alexander:LikeButton:0.2.0'
+    implementation 'com.android.support:multidex:1.0.2'
+    implementation 'com.klinkerapps:link_builder:1.3.2'
+    implementation 'com.sendbird.sdk:sendbird-android-sdk:3.0.16'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.facebook.android:facebook-android-sdk:4.26.0'
+    implementation 'com.itextpdf:itextg:5.5.9'
+    compile 'com.flipboard:bottomsheet-core:1.5.3'
+    compile 'com.flipboard:bottomsheet-commons:1.5.3' // optional
+
+    implementation "com.google.firebase:firebase-messaging:${googleServiceVersion}"
+    implementation "com.google.android.gms:play-services-analytics:${googleServiceVersion}"
+
+    implementation project(':filepicker')
+    implementation project(':floatingsearch')
+    implementation project(':mllibrary')
+    implementation project(':androidtagview')
+}
+

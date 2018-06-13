@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="xanhden">#333333</color>
+    <color name="donhat">#ff6376</color>
+    <color name="xanhduong">#e9f8ff</color>
+    <color name="xanh">#3fa9f5</color>
+    <color name="xam">#999999</color>
+    <color name="xamnhat">#f4f4f4</color>
+    <color name="blue_500">#3fa9f5</color>
+    <color name="hong">#fc42a4</color>
+    <color name="cam">#f4b840</color>
+    <color name="dodam">#ef0f3a</color>
+    <color name="vangnhat">#ffffd4</color>
+    <color name="bg_xam">#ececec</color>
+    <color name="white">#FFF</color>
+    <color name="window_bg">#FFF</color>
+
+    <color name="line_color">#d6d6d6</color>
+    <color name="xanhgreennhat">#beeca4</color>
+    <color name="xanhgreennhat2">#dcf7cd</color>
+    <color name="xanhgreen">#77d851</color>
+    <color name="xanhdam">#0a7e07</color>
+    <color name="xanhxam">#6d93a7</color>
+    <color name="xanh_da_troi">#61abfa</color>
+    <color name="xanhduongdam">#00a2f5</color>
+    <color name="tab_selected">#017CCA</color>
+    <color name="color_money">#39ACBF</color>
+    <color name="color_title_blue">#4969AC</color>
+    <color name="blue_main">#91a7ff</color>
+
+
+</resources>

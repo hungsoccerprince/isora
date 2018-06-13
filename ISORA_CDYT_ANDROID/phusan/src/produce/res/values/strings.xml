@@ -1,0 +1,5 @@
+<resources>
+    <!--<string name="app_name">Bệnh Viện Demo</string>-->
+    <string name="app_name">Bệnh Viện E</string>
+    <string name="topic_name">news_produce</string>
+</resources>

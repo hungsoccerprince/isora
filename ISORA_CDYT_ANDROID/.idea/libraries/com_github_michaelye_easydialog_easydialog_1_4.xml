@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.michaelye.easydialog:easydialog-1.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/easydialog-1.4.aar/0c6fc0e9ec20b856804d40b4dabaab98/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/easydialog-1.4.aar/0c6fc0e9ec20b856804d40b4dabaab98/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.michaelye.easydialog/easydialog/1.4/5d79d39c4cfff08c97bf74f3f63b4e8909346dda/easydialog-1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

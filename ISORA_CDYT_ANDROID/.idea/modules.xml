@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ISORA_CDYT_ANDROID.iml" filepath="$PROJECT_DIR$/ISORA_CDYT_ANDROID.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidtagview/androidtagview.iml" filepath="$PROJECT_DIR$/androidtagview/androidtagview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/filepicker/filepicker.iml" filepath="$PROJECT_DIR$/filepicker/filepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/floatingsearch/floatingsearch.iml" filepath="$PROJECT_DIR$/floatingsearch/floatingsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mllibrary/mllibrary.iml" filepath="$PROJECT_DIR$/mllibrary/mllibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phusan/phusan.iml" filepath="$PROJECT_DIR$/phusan/phusan.iml" />
+    </modules>
+  </component>
+</project>

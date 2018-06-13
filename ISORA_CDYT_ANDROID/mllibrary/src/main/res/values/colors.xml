@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="dialog_background">#01212121</color>
+    <color name="common_ripple_effect_color">#ff269dff</color>
+
+    <color name="black_p50">#7f000000</color>
+
+</resources>

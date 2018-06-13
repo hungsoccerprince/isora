@@ -1,0 +1,9 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="actionBarTetSize">50dp</dimen>
+    <dimen name="avatar_radius">10dp</dimen>
+    <dimen name="min_text">11dp</dimen>
+    <dimen name="size_text_title">15dp</dimen>
+</resources>

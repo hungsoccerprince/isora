@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutProgressBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:mrl_rippleAlpha="0.2"
+        app:mrl_rippleColor="@color/common_ripple_effect_color"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="true">
+
+
+        <ImageView
+            android:id="@+id/img_tool_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="15dp" />
+
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/betterCircleBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        fab:mlpb_enable_circle_background="true"
+        fab:mlpb_inner_radius="18.0dip"
+        fab:mlpb_progress_color="#32cfcd"
+        fab:mlpb_show_arrow="false" />
+</RelativeLayout>

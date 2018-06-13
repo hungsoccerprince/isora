@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 10
+        versionName "2.0.3"
+        //consumerProguardFiles 'consumer-proguard-rules.txt'
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+}
+ext {
+    supportLibVersion = '26.1.0'
+}
+configurations {
+    compile.exclude group: "org.apache.httpcomponents", module: "httpclient"
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:${supportLibVersion}"
+    implementation "com.android.support:recyclerview-v7:${supportLibVersion}"
+    implementation "com.android.support:design:${supportLibVersion}"
+    implementation "com.android.support:cardview-v7:${supportLibVersion}"
+    implementation 'com.bartoszlipinski:viewpropertyobjectanimator:1.2.0'
+    implementation 'com.google.code.gson:gson:2.8.0'
+
+}
+

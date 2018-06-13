@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/lnToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarSize">
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="10dp"
+            android:padding="7dp"
+            app:srcCompat="@drawable/ic_back_g" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_toRightOf="@+id/btnClose"
+            android:gravity="center"
+            android:padding="7dp"
+            app:srcCompat="@drawable/ic_back_g"
+            android:text="@string/common_register"
+            android:textColor="@color/xanh_da_troi"
+            android:textSize="16sp"
+
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/lnToolbar"
+        android:background="@color/line_color">
+
+    </View>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView3"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="98dp"
+                    android:layout_height="98dp"
+                    app:srcCompat="@drawable/ic_default_avatar" />
+
+
+                <LinearLayout
+                    android:id="@+id/btnSelectAvatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/common_choose_avatar"
+                        android:textColor="@color/xanh_da_troi"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="10dp"
+                        android:alpha="0.41"
+                        android:background="#87baf0">
+
+                    </View>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilNickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/txtNickName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/common_nickname"
+                    android:maxLines="1"
+                    android:textColor="@color/xanhden" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/common_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/xanhden" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/common_password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@color/xanhden" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txtConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/common_confirmpassword"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textColor="@color/xanhden" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:visibility="gone"
+                android:id="@+id/tilFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txtFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/string_full_name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/xanhden" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioGroup
+                android:layout_marginTop="10dp"
+                android:id="@+id/rbGroup"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trưởng khoa"
+                    android:buttonTint="@color/xanhgreen"
+                    android:id="@+id/rbOne"/>
+                <RadioButton
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phó khoa"
+                    android:buttonTint="@color/xanhgreen"
+                    android:id="@+id/rbTwo"/>
+
+                <RadioButton
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="BS"
+                    android:buttonTint="@color/xanhgreen"
+                    android:id="@+id/rbThree"/>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewSetRole"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phân quyền"
+                    android:textColor="@color/xanhden"
+                    android:textStyle="bold"/>
+
+                <CheckBox
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check01"
+                    android:text="Quản lý tư vấn"
+                    android:button="@drawable/checkbox_selector"
+                    />
+
+                <CheckBox
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check02"
+                    android:text="Quản lý đặt khám, xét nghiệm"
+                    android:button="@drawable/checkbox_selector"
+                    />
+
+                <CheckBox
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check03"
+                    android:text="Quản lý tin tức, sự kiện"
+                    android:button="@drawable/checkbox_selector"
+                    />
+
+                <CheckBox
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check04"
+                    android:text="Quản lý quảng cáo"
+                    android:button="@drawable/checkbox_selector"
+                    />
+
+                <CheckBox
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check05"
+                    android:text="Quản lý tin nhắn quảng bá"
+                    android:button="@drawable/checkbox_selector"
+                    />
+                <CheckBox
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check06"
+                    android:text="Quản lý dịch vụ"
+                    android:button="@drawable/checkbox_selector"
+                    />
+
+                <CheckBox
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check07"
+                    android:text="Quản lý tài khoản"
+                    android:button="@drawable/checkbox_selector"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnRegister"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_login_button"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/common_register"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnLogin"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/common_login"
+                android:textColor="@color/xanhxam"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

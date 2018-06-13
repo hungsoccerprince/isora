@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+
+}
+configurations {
+    compile.exclude group: "org.apache.httpcomponents", module: "httpclient"
+}
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+    maven { url "https://jitpack.io" }
+}
+ext {
+    supportLibVersion = '26.1.0'
+    googleServiceVersion = '11.4.0'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // Support Lib
+    api "com.android.support:recyclerview-v7:${supportLibVersion}"
+    api "com.android.support:cardview-v7:${supportLibVersion}"
+    api "com.android.support:appcompat-v7:${supportLibVersion}"
+    api "com.android.support:design:${supportLibVersion}"
+
+    // Google service
+    api "com.google.firebase:firebase-auth:${googleServiceVersion}"
+    api "com.google.android.gms:play-services-auth:${googleServiceVersion}"
+
+    api 'com.github.lawloretienne:imagegallery:0.1.0'
+    api 'com.google.code.gson:gson:2.8.2'
+    api 'com.squareup.okhttp3:okhttp:3.8.0'
+    api 'pub.devrel:easypermissions:1.0.0'
+
+    implementation 'com.google.api-client:google-api-client-android:1.22.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE'
+    implementation 'com.balysv:material-ripple:1.0.2'
+    implementation 'com.google.apis:google-api-services-youtube:v3-rev120-1.19.0'
+    implementation 'com.github.michaelye.easydialog:easydialog:1.4'
+    implementation 'com.wang.avi:library:2.1.3'
+
+
+}

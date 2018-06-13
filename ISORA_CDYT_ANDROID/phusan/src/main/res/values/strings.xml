@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Bệnh Viện Phụ Sản</string>
+    <!--<string name="app_name">Bệnh Viện Demo</string>-->
+
+    <string name="sologen">Chăm sóc sức khỏe chủ động</string>
+    <string name="common_register">Đăng ký</string>
+    <string name="common_choose_avatar">Chọn ảnh đại diện</string>
+    <string name="common_email">Email</string>
+    <string name="common_fullname">Họ tên</string>
+    <string name="common_password">Mật khẩu</string>
+    <string name="common_confirmpassword">Nhập lại mật khẩu</string>
+    <string name="title_activity_login">Sign in</string>
+
+
+    <string name="common_login">Đăng nhập</string>
+    <string name="common_not_yet_account">Bạn chưa có tài khoản?</string>
+    <string name="common_create">Tạo</string>
+    <string name="common_forgot_password">Quên mật khẩu?</string>
+
+    <string name="common_user_profile">Trang cá nhân</string>
+    <string name="layout_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="common_update_account">Cập nhật tài khoản</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="common_request_permission_access_file">Bạn cần cho phép đọc file trên thiết bị của bạn</string>
+    <string name="msg_fullname_invalid">Nhập họ tên (6-255 ký tự)</string>
+    <string name="msg_email_invalid">Nhập đúng định dạng email</string>
+    <string name="msg_password_invalid">Mật khẩu từ 6-30 ký tự</string>
+    <string name="msg_confirm_password_invalid">Xác nhận mật khẩu không trùng khớp</string>
+
+    <string name="msg_error_upload_image_failed">Lỗi khi upload ảnh, thử lại sau</string>
+    <string name="activity_register_failed">Email hoặc tên đăng nhập đã tồn tại. Vui lòng thử lại</string>
+    <string name="activity_login_failed">Email/tên đăng nhập hoặc mặt khẩu không đúng. Vui lòng thử lại!</string>
+    <string name="msg_not_exist_account">Không tìm thấy tài khoản với email bạn nhập!</string>
+
+    <string name="common_current_password">Mật khẩu hiện tại</string>
+    <string name="common_new_password">Mật khẩu mới</string>
+    <string name="common_confirm_new_password">Nhập lại mật khẩu mới</string>
+    <string name="common_finish">Xong</string>
+    <string name="common_accept">Đồng ý</string>
+    <string name="msg_current_password_invalid">Mật khẩu hiện tại không đúng</string>
+    <string name="msg_input_current_password">Nhập mật khẩu hiện tại</string>
+    <string name="msg_update_profile_failed">Cập nhật tài khoản không thành công</string>
+
+
+    <string name="commont_send_message">Nhắn tin</string>
+
+    <string name="notification">Thông báo</string>
+    <string name="commont_message">Tin nhắn</string>
+
+    <string name="common_share">Chia sẻ bạn bè</string>
+    <string name="common_update">Cập nhật</string>
+    <string name="common_version">Phiên bản</string>
+    <string name="common_rating">Đánh giá ứng dụng</string>
+    <string name="common_feedback">Góp ý báo lỗi</string>
+    <string name="common_cdyt_report_error_mail">isorasoftvn@gmail.com</string>
+
+    <string name="activity_setting_feedback_title_send">GÓP Ý</string>
+
+    <string name="logout">Đăng xuất</string>
+    <string name="common_fullname_hint">Thêm tên đầy đủ</string>
+
+    <string name="common_input_email_to_send_password">Nhập email đã đăng ký</string>
+    <string name="common_send">Gửi</string>
+    <string name="msg_forgot_password_success">Mật khẩu mới của bạn đã được gửi về email đăng ký. Vui lòng kiểm tra lại!</string>
+    <string name="common_change_password">Thay đổi mật khẩu</string>
+    <string name="activity_change_password_failed">Đổi mật khẩu không thành công</string>
+    <string name="msg_change_password_success">Đổi mật khẩu thành công</string>
+    <string name="msg_not_fount_account">Không tìm thấy thông tin tài khoản này</string>
+    <string name="common_emailornickname">Tên tài khoản/ Email</string>
+    <string name="msg_email_or_nickname_invalid">Nhập tài khoản hoặc email</string>
+
+    <string name="cannot_chat_with_this_user">Không thể gửi tin nhắn cho người này</string>
+    <string name="common_unread">Chưa đọc</string>
+
+
+    <string name="common_nickname">Tên tài khoản</string>
+    <string name="msg_nickname_invalid">Tài khoản không được chứa khoảng trắng</string>
+    <string name="common_name_display">Tên hiển thị</string>
+
+    <string name="recent_question_activity">Hoạt động gần đây</string>
+
+    <string name="upgrade_to_use_this_feature">Vui lòng nâng cấp tài khoản để sử dụng chức năng này</string>
+    <string name="string_full_name">Họ và tên</string>
+
+
+    <string name="facebook_app_id">398569107179016</string>
+    <string name="fb_login_protocol_scheme">fb398569107179016</string>
+    <string name="update_new_version">Ứng dụng đã có phiên bản mới. Trải nghiệm ngay!</string>
+    <string name="download_now">Đồng ý</string>
+    <string name="cancel">Bỏ qua</string>
+
+    <string name="msg_request_logout">Thông tin của bạn đã được thay đổi trên một thiết bị khác, vui lòng đăng nhập lại</string>
+    <string name="request_camera_permission">Cho phép ứng dụng sử dụng camera để sử dụng tính năng này</string>
+    <!--<string name="name_hospital">Bệnh Viện Demo</string>-->
+    <string name="name_hospital">Bệnh Viện Phụ Sản</string>
+    <string name="update_by_simple">Theo Số điện thoại</string>
+    <string name="update_by_first_number">Theo nhà mạng</string>
+    <string name="select_first_number">Chọn đầu số</string>
+    <string name="tab_viettel">Viettel</string>
+    <string name="do_you_want_view_list_contact1">Tất cả các SĐT có đầu số </string>
+    <string name="do_you_want_view_list_contact2"> sẽ được cập nhật sang đầu số </string>
+    <string name="do_you_want_view_list_contact3"> Bạn có muốn xem danh sách các SĐT sẽ được cập nhật hay không?</string>
+    <string name="do_you_want_view_list_contact_all1">Tất cả các SĐT của mạng </string>
+    <string name="do_you_want_view_list_contact_all2">sẽ được cập nhật đầu sô mới. Bạn có muốn xem danh sách các SĐT sẽ được cập nhật hay không?</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="will_update">sẽ được cập nhật thành</string>
+    <string name="common_update_now">Không! Cập nhật ngay</string>
+    <string name="update_success">Cập nhật thành công!</string>
+    <string name="first_number_old">Đầu số cũ</string>
+    <string name="first_number_new">Đầu số mới</string>
+    <string name="update_all">Cập nhật tất cả danh bạ</string>
+    <string name="do_you_want_update_all">Bạn có muốn cập nhật tất cả các số điện thoại theo đầu cố mới?</string>
+    <string name="training">Huớng dẫn sử dụng</string>
+</resources>
